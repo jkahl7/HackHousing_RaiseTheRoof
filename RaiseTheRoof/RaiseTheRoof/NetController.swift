@@ -24,7 +24,10 @@ class NetController
   
   var urlSession = NSURLSession()
   var accessToken : String?
-  
+  let clientID = ""
+    let redirectURL = ""
+    
+    
   init()
   {
     let ephermeralConfigeration = NSURLSessionConfiguration.ephemeralSessionConfiguration()

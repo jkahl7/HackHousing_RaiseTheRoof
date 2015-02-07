@@ -16,6 +16,7 @@
 		432226A31A868DBD00DC66A7 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 432226A21A868DBD00DC66A7 /* MapKit.framework */; };
 		432226A51A868E5C00DC66A7 /* NetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432226A41A868E5C00DC66A7 /* NetController.swift */; };
 		432226A71A8696BB00DC66A7 /* InfoPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432226A61A8696BB00DC66A7 /* InfoPageViewController.swift */; };
+		F236A7EB1A86B05200BC1674 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F236A7EA1A86B05200BC1674 /* WebViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		432226A21A868DBD00DC66A7 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		432226A41A868E5C00DC66A7 /* NetController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetController.swift; sourceTree = "<group>"; };
 		432226A61A8696BB00DC66A7 /* InfoPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoPageViewController.swift; sourceTree = "<group>"; };
+		F236A7EA1A86B05200BC1674 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				431F81C91A868B8600687A10 /* ViewController.swift */,
+				F236A7EA1A86B05200BC1674 /* WebViewController.swift */,
 				432226A41A868E5C00DC66A7 /* NetController.swift */,
 				432226A61A8696BB00DC66A7 /* InfoPageViewController.swift */,
 			);
@@ -254,6 +257,7 @@
 				432226A51A868E5C00DC66A7 /* NetController.swift in Sources */,
 				431F81CA1A868B8600687A10 /* ViewController.swift in Sources */,
 				431F81C81A868B8600687A10 /* AppDelegate.swift in Sources */,
+				F236A7EB1A86B05200BC1674 /* WebViewController.swift in Sources */,
 				432226A71A8696BB00DC66A7 /* InfoPageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
