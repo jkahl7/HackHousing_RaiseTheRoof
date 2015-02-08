@@ -17,6 +17,7 @@ class startViewController: UIViewController, UIPageViewControllerDataSource
   
   private let contentImages = ["walk1", "walk2", "walk3", "walk4", "walk5"]
   
+  
   override func viewDidLoad()
   {
     super.viewDidLoad()
@@ -53,8 +54,8 @@ class startViewController: UIViewController, UIPageViewControllerDataSource
   private func setupPageControl()
   {
     let appearance                           = UIPageControl.appearance()
-    appearance.backgroundColor               = UIColor.darkGrayColor()
-    appearance.pageIndicatorTintColor        = UIColor.grayColor()
+    appearance.backgroundColor               = UIColor(red: 0.318, green: 0.839, blue: 1, alpha: 1)
+    appearance.pageIndicatorTintColor        = UIColor(red: 0.624, green: 0.91, blue: 1, alpha: 1) 
     appearance.currentPageIndicatorTintColor = UIColor.whiteColor()
   }
   

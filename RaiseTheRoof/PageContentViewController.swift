@@ -38,6 +38,6 @@ class PageContentViewController: UIViewController
   {
     super.viewDidLoad()
     contentImageView!.image = UIImage(named: imageName)
-    self.mapButton.hidden = self.hideButton
+    self.mapButton.hidden   = self.hideButton
   }
 }
