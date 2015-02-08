@@ -7,13 +7,22 @@
 //
 
 import UIKit
+import WebKit
 
 class ViewController: UIViewController {
+    
+//    var webView : WKWebView?
 
   override func viewDidLoad() {
     super.viewDidLoad()
     // Do any additional setup after loading the view, typically from a nib.
   }
+    
+//    override func loadView() {
+//        super.loadView()
+//        self.webView = WKWebView()
+//        self.view = self.webView
+//    }
 
   override func didReceiveMemoryWarning() {
     super.didReceiveMemoryWarning()
