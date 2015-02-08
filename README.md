@@ -9,8 +9,8 @@
 			The purpose of this app is to help first time home buyers make an informed housing choice.</p>
 		<p>
 			This application was developed on February 7th, 2015 for Zillow and The University of Washington for the Hack Housing Hackathon.</p>
-		<p align="center">
-			<img height="622" src="file:///C:/Users/Damon/AppData/Local/Temp/msohtmlclip1/01/clip_image001.png" width="382" /></p>
+		
+			<img height="622" width="382" src="https://github.com/jkahl7/HackHousing_RaiseTheRoof/blob/master/RaiseTheRoof/RaiseTheRoof/Images.xcassets/walk1.imageset/Achieve%20your%20dreams%20screen.png" />
 		<p>
 			Our apps source code can be found at <a href="https://github.com/jkahl7/HackHousing_RaiseTheRoof">https://github.com/jkahl7/HackHousing_RaiseTheRoof</a>.</p>
 		<p>
