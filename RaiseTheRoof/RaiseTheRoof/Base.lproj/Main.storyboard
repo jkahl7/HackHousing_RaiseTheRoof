@@ -102,7 +102,29 @@
                     <view key="view" contentMode="scaleToFill" id="9We-R1-kOb">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nuh-QX-Bht" userLabel="Spacer">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="54"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="54" id="ObA-gI-9qh"/>
+                                    <constraint firstAttribute="width" constant="600" id="d0N-6l-I7A"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ListScreen" translatesAutoresizingMaskIntoConstraints="NO" id="Wfs-ct-bXG">
+                                <rect key="frame" x="0.0" y="54" width="600" height="530"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="nuh-QX-Bht" secondAttribute="trailing" constant="-16" id="3i5-dN-VWl"/>
+                            <constraint firstItem="Wfs-ct-bXG" firstAttribute="leading" secondItem="9We-R1-kOb" secondAttribute="leadingMargin" constant="-16" id="E19-Sp-QC9"/>
+                            <constraint firstItem="nuh-QX-Bht" firstAttribute="leading" secondItem="9We-R1-kOb" secondAttribute="leadingMargin" constant="-16" id="PbO-FV-GKi"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="Wfs-ct-bXG" secondAttribute="bottom" constant="16" id="eBb-La-S0d"/>
+                            <constraint firstItem="Wfs-ct-bXG" firstAttribute="top" secondItem="nuh-QX-Bht" secondAttribute="bottom" id="uVi-qI-c9T"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Wfs-ct-bXG" secondAttribute="trailing" constant="-16" id="yg3-Qk-ntT"/>
+                            <constraint firstItem="nuh-QX-Bht" firstAttribute="top" secondItem="9We-R1-kOb" secondAttribute="topMargin" id="yje-N7-cho"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="List" id="vrZ-RG-ABt"/>
                 </viewController>
@@ -121,7 +143,29 @@
                     <view key="view" contentMode="scaleToFill" id="DAd-RI-qY4">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="auI-bU-v8T">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="54"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="54" id="fFp-iq-kNL"/>
+                                    <constraint firstAttribute="width" constant="600" id="sEJ-Lh-VpX"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home recommendation" translatesAutoresizingMaskIntoConstraints="NO" id="ET0-N7-dim">
+                                <rect key="frame" x="0.0" y="54" width="600" height="540"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="ET0-N7-dim" secondAttribute="trailing" constant="-16" id="Fg4-au-CrH"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="auI-bU-v8T" secondAttribute="trailing" constant="-16" id="Lfp-fO-BBr"/>
+                            <constraint firstItem="auI-bU-v8T" firstAttribute="leading" secondItem="DAd-RI-qY4" secondAttribute="leadingMargin" constant="-16" id="MHJ-vR-jg3"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="ET0-N7-dim" secondAttribute="bottom" constant="6" id="NTJ-Lx-cSN"/>
+                            <constraint firstItem="ET0-N7-dim" firstAttribute="leading" secondItem="DAd-RI-qY4" secondAttribute="leadingMargin" constant="-16" id="SBO-Et-B3e"/>
+                            <constraint firstItem="ET0-N7-dim" firstAttribute="top" secondItem="auI-bU-v8T" secondAttribute="bottom" id="SE4-4E-2Tk"/>
+                            <constraint firstItem="auI-bU-v8T" firstAttribute="top" secondItem="DAd-RI-qY4" secondAttribute="topMargin" id="tRk-DK-IrO"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Settings" id="mhB-Wf-oMg"/>
                 </viewController>
@@ -140,7 +184,29 @@
                     <view key="view" contentMode="scaleToFill" id="fxj-u2-eUA">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bUa-MU-trN" userLabel="Spacer">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="54"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="54" id="SA8-SX-WWt"/>
+                                    <constraint firstAttribute="width" constant="600" id="hsD-Ks-Bci"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="map" translatesAutoresizingMaskIntoConstraints="NO" id="sZf-yT-Zyl">
+                                <rect key="frame" x="0.0" y="54" width="600" height="550"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="sZf-yT-Zyl" firstAttribute="top" secondItem="bUa-MU-trN" secondAttribute="bottom" id="0Ch-M9-h1r"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="sZf-yT-Zyl" secondAttribute="trailing" constant="-16" id="C2W-cy-A47"/>
+                            <constraint firstItem="bUa-MU-trN" firstAttribute="leading" secondItem="fxj-u2-eUA" secondAttribute="leadingMargin" constant="-16" id="aU1-b9-wdV"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="bUa-MU-trN" secondAttribute="trailing" constant="-16" id="bmx-CS-1pZ"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="sZf-yT-Zyl" secondAttribute="bottom" constant="-4" id="gTS-1V-pYV"/>
+                            <constraint firstItem="bUa-MU-trN" firstAttribute="top" secondItem="fxj-u2-eUA" secondAttribute="topMargin" id="qB3-xO-Fzj"/>
+                            <constraint firstItem="sZf-yT-Zyl" firstAttribute="leading" secondItem="fxj-u2-eUA" secondAttribute="leadingMargin" constant="-16" id="xST-tw-awm"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Map" id="Of2-yq-Ftx"/>
                 </viewController>
@@ -159,9 +225,33 @@
                     <view key="view" contentMode="scaleToFill" id="cRX-Cg-WLN">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w1k-G3-hDR" userLabel="Spacer">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="54"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="600" id="AzE-VF-b9U"/>
+                                    <constraint firstAttribute="height" constant="54" id="nWu-ba-Ja2"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HomeScreen" translatesAutoresizingMaskIntoConstraints="NO" id="elr-LB-bxK">
+                                <rect key="frame" x="0.0" y="54" width="600" height="546"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="elr-LB-bxK" secondAttribute="trailing" constant="-16" id="PIu-OG-h2x"/>
+                            <constraint firstItem="elr-LB-bxK" firstAttribute="bottom" secondItem="cRX-Cg-WLN" secondAttribute="bottomMargin" id="QLp-eF-14A"/>
+                            <constraint firstItem="w1k-G3-hDR" firstAttribute="top" secondItem="cRX-Cg-WLN" secondAttribute="topMargin" id="S2Q-Pn-YoE"/>
+                            <constraint firstItem="elr-LB-bxK" firstAttribute="top" secondItem="w1k-G3-hDR" secondAttribute="bottom" id="Sfv-zK-97v"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="w1k-G3-hDR" secondAttribute="trailing" constant="-16" id="VEe-uD-KF6"/>
+                            <constraint firstItem="elr-LB-bxK" firstAttribute="leading" secondItem="cRX-Cg-WLN" secondAttribute="leadingMargin" constant="-16" id="cw3-Aa-WOu"/>
+                            <constraint firstItem="w1k-G3-hDR" firstAttribute="leading" secondItem="cRX-Cg-WLN" secondAttribute="leadingMargin" constant="-16" id="nob-I5-ufU"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Home" id="QfF-yS-G8C"/>
+                    <tabBarItem key="tabBarItem" title="Home" id="QfF-yS-G8C">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
+                    </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3nd-W8-Js1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -170,7 +260,7 @@
         <!--TabBarController-->
         <scene sceneID="1nz-Yf-I8q">
             <objects>
-                <tabBarController storyboardIdentifier="TabBarController" title="TabBarController" id="30D-cc-oq2" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="TabBarController" title="TabBarController" id="30D-cc-oq2" customClass="TabBarViewController" customModule="RaiseTheRoof" customModuleProvider="target" sceneMemberID="viewController">
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="S8O-dy-GkU">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
@@ -302,7 +392,11 @@
     </scenes>
     <resources>
         <image name="Got it button" width="572" height="140"/>
+        <image name="HomeScreen" width="1500" height="2668"/>
+        <image name="ListScreen" width="1500" height="2668"/>
         <image name="Sign Up button" width="1378" height="160"/>
         <image name="Splash Screen" width="1502" height="2668"/>
+        <image name="home recommendation" width="1500" height="2668"/>
+        <image name="map" width="1500" height="2668"/>
     </resources>
 </document>
