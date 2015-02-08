@@ -15,7 +15,7 @@ class startViewController: UIViewController, UIPageViewControllerDataSource
   
   private var pageViewController: UIPageViewController?
   
-  private let contentImages = ["walk0", "walk1", "walk2", "walk3", "walk4"]
+  private let contentImages = ["walk1", "walk2", "walk3", "walk4", "walk5"]
   
   override func viewDidLoad()
   {

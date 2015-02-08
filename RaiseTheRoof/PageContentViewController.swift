@@ -15,6 +15,7 @@ class PageContentViewController: UIViewController
   @IBOutlet weak var mapButton: UIButton!
   @IBAction func toMap(sender: AnyObject)
   {
+    println("a button to nowhere!")
   }
   
   var hideButton : Bool   = false
