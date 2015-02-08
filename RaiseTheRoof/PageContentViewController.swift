@@ -10,11 +10,16 @@ import UIKit
 
 class PageContentViewController: UIViewController
 {
-
-  @IBOutlet weak var contentText: UILabel!
-  // MARK: - Variables
-  var itemIndex: Int = 0
-  var imageName: String = ""
+  //should only appear on the final page
+  
+  @IBOutlet weak var mapButton: UIButton!
+  @IBAction func toMap(sender: AnyObject)
+  {
+  }
+  
+  var hideButton : Bool   = false
+  var itemIndex  : Int    = 0
+  var imageName  : String = "default"
   {
     didSet
     {
@@ -25,11 +30,13 @@ class PageContentViewController: UIViewController
     }
   }
   
+  
   @IBOutlet var contentImageView: UIImageView?
   
-  // MARK: - View Lifecycle
   override func viewDidLoad()
   {
     super.viewDidLoad()
     contentImageView!.image = UIImage(named: imageName)
-  }}
+    self.mapButton.hidden = self.hideButton
+  }
+}

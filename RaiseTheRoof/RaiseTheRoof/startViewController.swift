@@ -15,9 +15,7 @@ class startViewController: UIViewController, UIPageViewControllerDataSource
   
   private var pageViewController: UIPageViewController?
   
-  private let contentImages = ["home0", "home1", "home2", "home3"]
-  private let textContent   = ["page0", "page1", "page2", "page3"]
-
+  private let contentImages = ["walk0", "walk1", "walk2", "walk3", "walk4"]
   
   override func viewDidLoad()
   {
@@ -39,7 +37,9 @@ class startViewController: UIViewController, UIPageViewControllerDataSource
       let firstController                  = getItemController(0)!
       let startingViewControllers: NSArray = [firstController]
      
-      pageController.setViewControllers(startingViewControllers, direction: UIPageViewControllerNavigationDirection.Forward, animated: false, completion: nil)
+      pageController.setViewControllers(startingViewControllers, direction: UIPageViewControllerNavigationDirection.Forward,
+                                                                  animated: false,
+                                                                completion: nil)
     }
     
     pageViewController = pageController
@@ -49,6 +49,7 @@ class startViewController: UIViewController, UIPageViewControllerDataSource
     pageViewController!.didMoveToParentViewController(self)
   }
   
+  
   private func setupPageControl()
   {
     let appearance                           = UIPageControl.appearance()
@@ -57,10 +58,10 @@ class startViewController: UIViewController, UIPageViewControllerDataSource
     appearance.currentPageIndicatorTintColor = UIColor.whiteColor()
   }
   
-  //MARK:  PageViewController Datasources
+  
+  //MARK:  PageViewController Datasource
   func pageViewController(pageViewController: UIPageViewController, viewControllerBeforeViewController viewController: UIViewController) -> UIViewController?
   {
-    
     let itemController = viewController as PageContentViewController
     
     if (itemController.itemIndex > 0)
@@ -69,6 +70,7 @@ class startViewController: UIViewController, UIPageViewControllerDataSource
     }
     return nil
   }
+  
   
   func pageViewController(pageViewController: UIPageViewController, viewControllerAfterViewController viewController: UIViewController) -> UIViewController?
   {
@@ -81,13 +83,21 @@ class startViewController: UIViewController, UIPageViewControllerDataSource
     return nil
   }
   
+  
   private func getItemController(itemIndex: Int) -> PageContentViewController?
   {
     if (itemIndex < contentImages.count)
     {
       let pageItemController = self.storyboard!.instantiateViewControllerWithIdentifier("Content") as PageContentViewController
       pageItemController.itemIndex = itemIndex
-      pageItemController.imageName = contentImages[itemIndex]
+      pageItemController.imageName = self.contentImages[itemIndex]
+      if (itemIndex == contentImages.count - 1) // if true we are on the final VC -> button is no longer hidden
+      {
+        pageItemController.hideButton = false
+      } else {
+        pageItemController.hideButton = true
+      }
+      
       return pageItemController
     }
     return nil

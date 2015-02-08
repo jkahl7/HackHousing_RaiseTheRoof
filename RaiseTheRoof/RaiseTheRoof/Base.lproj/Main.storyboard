@@ -64,19 +64,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wVV-F0-t99">
-                                <rect key="frame" x="279" y="40" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WJ2-kz-ANk">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WJ2-kz-ANk">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JML-AM-M6u">
+                                <rect key="frame" x="16" y="20" width="84" height="30"/>
+                                <state key="normal" title="To the MAP!">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="toMap:" destination="f0J-RQ-FmB" eventType="touchUpInside" id="sCw-nT-3vM"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="WJ2-kz-ANk" firstAttribute="top" secondItem="WNv-SJ-Qtf" secondAttribute="topMargin" id="BQp-ha-8W0"/>
+                            <constraint firstItem="JML-AM-M6u" firstAttribute="top" secondItem="cb7-hu-GOV" secondAttribute="bottom" id="JqT-nV-tUL"/>
+                            <constraint firstItem="JML-AM-M6u" firstAttribute="leading" secondItem="WNv-SJ-Qtf" secondAttribute="leadingMargin" id="XxJ-u8-UZG"/>
                             <constraint firstAttribute="trailingMargin" secondItem="WJ2-kz-ANk" secondAttribute="trailing" constant="-16" id="imy-8B-cei"/>
                             <constraint firstItem="WJ2-kz-ANk" firstAttribute="leading" secondItem="WNv-SJ-Qtf" secondAttribute="leadingMargin" constant="-16" id="l7H-h3-V7F"/>
                             <constraint firstItem="MZP-dV-Xh8" firstAttribute="top" secondItem="WJ2-kz-ANk" secondAttribute="bottom" id="xsR-y3-nk7"/>
@@ -84,7 +90,7 @@
                     </view>
                     <connections>
                         <outlet property="contentImageView" destination="WJ2-kz-ANk" id="amH-kT-T8F"/>
-                        <outlet property="contentText" destination="wVV-F0-t99" id="y3H-OC-Ukr"/>
+                        <outlet property="mapButton" destination="JML-AM-M6u" id="Bb2-hE-5qJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5yv-Cn-suH" userLabel="First Responder" sceneMemberID="firstResponder"/>
