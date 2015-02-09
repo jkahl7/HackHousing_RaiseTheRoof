@@ -17,6 +17,7 @@ class PageContentViewController: UIViewController
   {
     let toVC = self.storyboard?.instantiateViewControllerWithIdentifier("SignUpVC") as SignUpViewController
     self.navigationController?.pushViewController(toVC, animated: true)
+
   }
   
   var hideButton : Bool   = false
