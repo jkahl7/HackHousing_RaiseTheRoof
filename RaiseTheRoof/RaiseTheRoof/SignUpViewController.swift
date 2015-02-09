@@ -25,10 +25,9 @@ class SignUpViewController: UIViewController, UITextFieldDelegate
   @IBAction func signUpSelected(sender: UIButton)
   {
     println("signup selected")
-    let toVC = self.storyboard?.instantiateViewControllerWithIdentifier("TabBarController") as UITabBarController
+    let toVC = self.storyboard?.instantiateViewControllerWithIdentifier("Quiz0VC") as UIViewController
     
     self.navigationController?.pushViewController(toVC, animated: true)
-    
     
   }
   

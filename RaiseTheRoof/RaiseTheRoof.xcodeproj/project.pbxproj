@@ -18,6 +18,9 @@
 		432A694E1A870AB500645132 /* startViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432A694D1A870AB500645132 /* startViewController.swift */; };
 		43C9A1121A87DD0C00B4B8A4 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C9A1111A87DD0C00B4B8A4 /* SignUpViewController.swift */; };
 		43C9A1141A88011300B4B8A4 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C9A1131A88011300B4B8A4 /* TabBarViewController.swift */; };
+		43C9A1181A880A7800B4B8A4 /* Quiz0ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C9A1171A880A7800B4B8A4 /* Quiz0ViewController.swift */; };
+		43C9A11A1A880A8D00B4B8A4 /* Quiz1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C9A1191A880A8D00B4B8A4 /* Quiz1ViewController.swift */; };
+		43C9A11C1A880A9A00B4B8A4 /* Quiz2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C9A11B1A880A9A00B4B8A4 /* Quiz2ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +49,9 @@
 		432A694D1A870AB500645132 /* startViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = startViewController.swift; sourceTree = "<group>"; };
 		43C9A1111A87DD0C00B4B8A4 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		43C9A1131A88011300B4B8A4 /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		43C9A1171A880A7800B4B8A4 /* Quiz0ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Quiz0ViewController.swift; sourceTree = "<group>"; };
+		43C9A1191A880A8D00B4B8A4 /* Quiz1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Quiz1ViewController.swift; sourceTree = "<group>"; };
+		43C9A11B1A880A9A00B4B8A4 /* Quiz2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Quiz2ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +135,9 @@
 			children = (
 				43C9A1111A87DD0C00B4B8A4 /* SignUpViewController.swift */,
 				432A694D1A870AB500645132 /* startViewController.swift */,
+				43C9A1171A880A7800B4B8A4 /* Quiz0ViewController.swift */,
+				43C9A1191A880A8D00B4B8A4 /* Quiz1ViewController.swift */,
+				43C9A11B1A880A9A00B4B8A4 /* Quiz2ViewController.swift */,
 				432A694B1A87002700645132 /* PageContentViewController.swift */,
 				43C9A1131A88011300B4B8A4 /* TabBarViewController.swift */,
 				432226A41A868E5C00DC66A7 /* NetController.swift */,
@@ -201,6 +210,7 @@
 				TargetAttributes = {
 					431F81C11A868B8600687A10 = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = RPZ9M4VS48;
 						SystemCapabilities = {
 							com.apple.Maps.iOS = {
 								enabled = 1;
@@ -257,12 +267,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43C9A1181A880A7800B4B8A4 /* Quiz0ViewController.swift in Sources */,
 				432226A51A868E5C00DC66A7 /* NetController.swift in Sources */,
 				432A694E1A870AB500645132 /* startViewController.swift in Sources */,
 				432A694C1A87002700645132 /* PageContentViewController.swift in Sources */,
 				431F81C81A868B8600687A10 /* AppDelegate.swift in Sources */,
+				43C9A11A1A880A8D00B4B8A4 /* Quiz1ViewController.swift in Sources */,
 				43C9A1141A88011300B4B8A4 /* TabBarViewController.swift in Sources */,
 				43C9A1121A87DD0C00B4B8A4 /* SignUpViewController.swift in Sources */,
+				43C9A11C1A880A9A00B4B8A4 /* Quiz2ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -387,9 +400,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = RaiseTheRoof/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -397,9 +413,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = RaiseTheRoof/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
